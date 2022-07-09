@@ -1,0 +1,345 @@
+/* GLOBAL */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* NAV-BAR */
+
+.nav-bar {
+    border: solid black 2px;
+    display: flex;
+    padding: .75em 2em;
+    font-size: 1.4rem;
+    background-color: #ff5d55;
+    max-width: 100%;
+}
+
+.nav-bar > * {
+    display: flex;
+}
+
+.logo {
+    max-width: 50%;
+    font-family: 'Monoton', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-buttons {
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'Offside', cursive;
+    color: black;
+    font-weight: bold;
+    border-right: solid black 2px;
+    text-align: left;
+    padding: 0 2em;
+}
+
+.btn:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.btn:hover,
+.btn:active,
+.logo:hover,
+.logo:active {
+    color: white;
+}
+
+/* FIRST CONTAINER GLOBAL*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+    /* justify-content: center; */
+}
+
+@media screen and (min-width: 1250px) {
+    html {
+    font-size: 18px;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+    font-size: 20px;
+}
+    
+}
+
+@media screen and (min-width: 1700px) {
+    html {
+    font-size: 22px;
+}
+    
+}
+
+@media screen and (min-width: 1900px) {
+    html {
+    font-size: 24px;
+}
+    
+}
+
+@media screen and (min-width: 2100px) {
+    html {
+    font-size: 26px;
+}
+    
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    border: solid black 2px;
+    padding: 3em 1.5em 3em 3em;
+}
+
+/* FIRST CONTAINER LEFT */
+
+.hero-left {
+    /* border-right: solid lime; */
+    display: flex;
+    /* height: 100%; */
+    align-items: center;
+    width: 100%;
+    flex: 1 0 1;
+}
+
+.greeting {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.greeting h1 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.75rem;
+    color: #3b4754;
+}
+
+.greeting p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #798da3;
+    padding-right: 2rem;
+    margin: 0 0 .75rem 0;
+    max-width: 30rem;
+}
+
+.greeting-buttons {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.hero-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    font-size: .75rem;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+.hero-btn.one {
+    background-color: #29323d;
+    color: white;
+    max-width: 10rem;
+    width: 100%;
+}
+
+.hero-btn.two {
+    background-color: white;
+    color: black;
+    max-width: 10rem;
+    width: 100%;
+}
+
+.hero-btn.one:hover,
+.hero-btn.one:active {
+    background-color: #ff5d55;
+    border: none;
+}
+
+.hero-btn.two:hover,
+.hero-btn.two:active {
+    border: solid #ff5d55;
+    color: #ff5d55;
+}
+
+
+/* FIRST CONTAINER RIGHT */
+
+.hero-right {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+    /* display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1 0 1; */
+
+.members {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.row {
+    /* border: solid black 1px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.row a {
+    width: 6rem;
+    height: 6rem;
+    /* border: solid black 1px; */
+}
+
+/* HERO ICONS */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.name {
+    flex: .5;
+    display: flex;
+    border: solid black;
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #29323d;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px black;
+}
+
+.name-text {
+    font-size: .8rem;
+    align-self: center;
+    color: white;
+    font-family: 'Offside', cursive;
+}
+
+.image-container {
+    flex: 2;
+    border: solid black;
+    max-width: 70%;
+    min-width: 70%;
+    max-height: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0px 2px 2px black;
+    background-color: #edf0f4;
+}
+
+.image {
+    flex: 2;
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.bottom {
+    flex: .5;
+    display: flex;
+    border: solid black;
+
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #9fafc1;
+    border-radius: 3px;
+
+    box-shadow: 0px 2px 2px black;
+}
+
+.bottom-text {
+    font-size: .4rem;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-family: 'Offside', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
