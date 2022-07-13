@@ -35,6 +35,7 @@ body {
     width: 100%;
     top: 0;
     align-items: center;
+    z-index: 1;
 }
 
 .nav-bar > * {
@@ -157,19 +158,20 @@ body {
     border: solid black .15rem;
     border-top: none;
     padding: 3em 1em 3em 3em;
+    overflow: auto;
 }
 
 /* FIRST CONTAINER LEFT */
 
 .hero-left {
-    /* border-right: solid lime; */
     display: flex;
-    /* height: 100%; */
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    flex: 1 0 1;
     padding-right: 1rem;
     padding-left: 2rem;
+
 }
 
 .greeting {
@@ -178,6 +180,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: auto;
+
 }
 
 .greeting h1 {
@@ -269,6 +273,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    overflow: auto;
+
 }
 
 .row {
@@ -397,24 +403,67 @@ body {
     border: solid black .15rem;
     border-top: none;
     align-items: center;
+    padding: 3em;
 }
 
 .card-container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 10em;
 }
 
 .card {
-    height: 3rem;
-    width: 3rem;
+    height: 18rem;
+    width: 13rem;
     border: solid black .1rem;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
 
+.label {
+    padding: .7rem;
+    width: 80%;
+    text-align: center;
+    border-radius: .7rem;
+    box-shadow: 0px 1px 3px black;
+    background-color: #29323d;
+    color: white;
+    font-family: 'Offside', cursive;
+    font-size: .8rem;
+    border: solid white 1px;
+}
 
+.for-positioning {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    transform: translateY(-107%);
+    overflow: hidden;
+}
 
+.title-card {
+	background-color: #29323d;
+    color: white;
+    border-radius: .5rem;
+	text-align: center;
+    justify-content: center;
+	padding: .84em .84em .84em .84em;
+	display: block;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 2rem;
+}
 
+.card {
+    background-color: #edf0f4;
+    box-shadow: 0px 1px 10px black;
 
+}
 
 
 
